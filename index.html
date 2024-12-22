@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Weather Widget For Flights | theSV30</title>
+    <title>Weather Widget For Flights | theSV30</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -44,45 +44,33 @@
             <input type="text" class="search" placeholder="Search city..." />
             <button>Search</button>
 
-            <div class="weather-info">
-                <h2 id="location"></h2>
-                <p id="temperature"></p>
-                <p id="description"></p>
-                <div class="col-md-4">
-                    <section class="current-weather">
-                        <h1 class="city-title" id="displayed-city">Mumbai</h1>
-                        <span class="current-time">9:43am | 13 Aug | Tuesday</span>
-                        <div class="weather-info">
-                            <img src="https://img.icons8.com/color-glass/42/000000/cloud.png" alt="Cloudy"/>
-                            <div>
-                                <h1 class="temp-title" id="current-temperature">29°</h1>
-                                <h3 class="weather-status">Cloudy</h3>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="row mb-4">
-                    <div class="col">
-                        <div class="weather-details">
-                            <div class="weather-item">
-                                <span class="weather-label">Humidity:</span>
-                                <span id="humidity" class="weather-value"></span>
-                            </div>
-                            <div class="weather-item">
-                                <span class="weather-label">Wind:</span>
-                                <span id="wind" class="weather-value"></span>
-                            </div>
-                            <div class="weather-item">
-                                <span class="weather-label">Visibility:</span>
-                                <span id="visibility" class="weather-value"></span>
-                            </div>
-                        </div>
+            <section class="current-weather">
+                <h1 class="city-title" id="displayed-city">Baku</h1>
+                <span class="current-time" id="time">9:43am | 13 Aug | Tuesday</span>
+                <div class="weather-info">
+                    <img src="https://img.icons8.com/color-glass/42/000000/cloud.png" alt="Weather Icon" id="weather-icon"/>
+                    <div>
+                        <h1 class="temp-title" id="current-temperature">9.03°C</h1>
+                        <h3 class="weather-status" id="weather-status">Broken Clouds</h3>
                     </div>
+                </div>
+            </section>
+            <div class="weather-details">
+                <div class="weather-item">
+                    <span class="weather-label">Humidity:</span>
+                    <span id="humidity" class="weather-value"></span>
+                </div>
+                <div class="weather-item">
+                    <span class="weather-label">Wind:</span>
+                    <span id="wind" class="weather-value"></span>
+                </div>
+                <div class="weather-item">
+                    <span class="weather-label">Visibility:</span>
+                    <span id="visibility" class="weather-value"></span>
                 </div>
             </div>
 
-            <!-- Week Forecast inside "From" container -->
-            <div class="row week-forecast">
+            <div class="week-forecast">
                 <div class="col-md-2">
                     <h4>Weds</h4>
                     <img src="https://img.icons8.com/color-glass/42/000000/cloud.png" alt="Cloudy"/>
@@ -120,45 +108,34 @@
             <h3 style="display: inline;">To</h3>
             <input type="text" class="search" placeholder="Search city..." />
             <button>Search</button>
-            <div class="weather-info">
-                <h2 id="location"></h2>
-                <p id="temperature"></p>
-                <p id="description"></p>
-                <div class="col-md-4">
-                    <section class="current-weather">
-                        <h1 class="city-title" id="displayed-city">Delhi</h1>
-                        <span class="current-time">9:43am | 13 Aug | Tuesday</span>
-                        <div class="weather-info">
-                            <img src="https://img.icons8.com/color-glass/42/000000/sun.png" alt="Sunny"/>
-                            <div>
-                                <h1 class="temp-title" id="current-temperature">31°</h1>
-                                <h3 class="weather-status">Sunny</h3>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="row mb-4">
-                    <div class="col">
-                        <div class="weather-details">
-                            <div class="weather-item">
-                                <span class="weather-label">Humidity:</span>
-                                <span id="humidity" class="weather-value"></span>
-                            </div>
-                            <div class="weather-item">
-                                <span class="weather-label">Wind:</span>
-                                <span id="wind" class="weather-value"></span>
-                            </div>
-                            <div class="weather-item">
-                                <span class="weather-label">Visibility:</span>
-                                <span id="visibility" class="weather-value"></span>
-                            </div>
-                        </div>
+
+            <section class="current-weather">
+                <h1 class="city-title" id="displayed-city">Delhi</h1>
+                <span class="current-time" id="time">9:43am | 13 Aug | Tuesday</span>
+                <div class="weather-info">
+                    <img src="https://img.icons8.com/color-glass/42/000000/sun.png" alt="Weather Icon" id="weather-icon"/>
+                    <div>
+                        <h1 class="temp-title" id="current-temperature">31°C</h1>
+                        <h3 class="weather-status" id="weather-status">Sunny</h3>
                     </div>
+                </div>
+            </section>
+            <div class="weather-details">
+                <div class="weather-item">
+                    <span class="weather-label">Humidity:</span>
+                    <span id="humidity" class="weather-value"></span>
+                </div>
+                <div class="weather-item">
+                    <span class="weather-label">Wind:</span>
+                    <span id="wind" class="weather-value"></span>
+                </div>
+                <div class="weather-item">
+                    <span class="weather-label">Visibility:</span>
+                    <span id="visibility" class="weather-value"></span>
                 </div>
             </div>
 
-            <!-- Week Forecast inside "To" container -->
-            <div class="row week-forecast">
+            <div class="week-forecast">
                 <div class="col-md-2">
                     <h4>Weds</h4>
                     <img src="https://img.icons8.com/color-glass/42/000000/cloud.png" alt="Cloudy"/>
